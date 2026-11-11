@@ -3,16 +3,17 @@
   "version": "0.1.0",
   "description": "Rule-based Piano/Bass/Drums/Guitar arrangers and style profiles for Hum2Music.",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/hum2music/hum2music",
+  "homepage": "https://github.com/hum2music/arrangement",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hum2music/hum2music.git",
-    "directory": "packages/arrangement"
+    "url": "git+https://github.com/hum2music/arrangement.git"
   },
   "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "dependencies": {
     "@hum2music/core": "workspace:*",
     "@hum2music/music-theory": "workspace:*",
