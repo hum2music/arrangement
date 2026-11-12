@@ -1,6 +1,6 @@
 import type { ChordEvent, NoteEvent } from "@hum2music/core";
 import { chordPitchClasses, parseChordSymbol, pitchClassOf } from "@hum2music/music-theory";
-import type { ArrangementContext, InstrumentArranger } from "./types";
+import type { ArrangementContext, InstrumentArranger } from "./types.ts";
 
 const MIN_PITCH = 48; // C3
 const MAX_PITCH = 72; // C5

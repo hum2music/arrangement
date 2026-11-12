@@ -1,6 +1,6 @@
 import type { ChordEvent, NoteEvent } from "@hum2music/core";
 import { chordPitchClasses, parseChordSymbol, pitchClassOf } from "@hum2music/music-theory";
-import type { ArrangementContext, InstrumentArranger } from "./types";
+import type { ArrangementContext, InstrumentArranger } from "./types.ts";
 
 /** Standard tuning, low to high string (open-string MIDI pitches): E2 A2 D3 G3 B3 E4. */
 const OPEN_STRING_PITCHES = [40, 45, 50, 55, 59, 64];

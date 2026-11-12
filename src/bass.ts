@@ -1,6 +1,6 @@
 import type { ChordEvent, NoteEvent } from "@hum2music/core";
 import { parseChordSymbol, pitchClassOf } from "@hum2music/music-theory";
-import type { ArrangementContext, InstrumentArranger } from "./types";
+import type { ArrangementContext, InstrumentArranger } from "./types.ts";
 
 const ROOT_OCTAVE_BASE_PITCH = 36; // the C in "C2", i.e. lowestPitchInOctave(0, ...) = 36
 const VELOCITY = 75;

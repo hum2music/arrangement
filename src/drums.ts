@@ -1,5 +1,5 @@
 import type { ChordEvent, NoteEvent } from "@hum2music/core";
-import type { ArrangementContext, InstrumentArranger } from "./types";
+import type { ArrangementContext, InstrumentArranger } from "./types.ts";
 
 /** General MIDI percussion map note numbers. */
 export const KICK_PITCH = 36;

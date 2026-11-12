@@ -1,10 +1,10 @@
 import type { ChordEvent, NoteEvent, SongSection } from "@hum2music/core";
-import { generateBassArrangement } from "./bass";
-import { generateDrumArrangement } from "./drums";
-import { generateGuitarArrangement } from "./guitar";
-import { generatePianoArrangement } from "./piano";
-import { applySectionalHumanization } from "./sectional-humanize";
-import { resolveStyleProfile, type StyleProfile } from "./style";
+import { generateBassArrangement } from "./bass.ts";
+import { generateDrumArrangement } from "./drums.ts";
+import { generateGuitarArrangement } from "./guitar.ts";
+import { generatePianoArrangement } from "./piano.ts";
+import { applySectionalHumanization } from "./sectional-humanize.ts";
+import { resolveStyleProfile, type StyleProfile } from "./style.ts";
 
 export const ARRANGEABLE_INSTRUMENTS = ["piano", "bass", "drums", "guitar"] as const;
 export type ArrangeableInstrument = (typeof ARRANGEABLE_INSTRUMENTS)[number];
