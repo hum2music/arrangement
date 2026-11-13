@@ -7,7 +7,12 @@ export const SNARE_PITCH = 38;
 export const CLOSED_HIHAT_PITCH = 42;
 
 const HIT_DURATION_BEATS = 0.1;
-const VELOCITY = { kick: 100, snare: 95, hihat: 70 };
+// Toned down from an earlier 100/95/70: at those levels the drums read as
+// louder and more constant than the rest of a typical mix, since this
+// pattern repeats unvaried for the whole song (no fills/section dynamics
+// yet - see tasks/STATUS.md). The hi-hat drops the most since it's the one
+// part playing on every eighth note, so it's the most audibly "continuous".
+const VELOCITY = { kick: 85, snare: 80, hihat: 55 };
 
 export interface DrumArrangementOptions {
   /** "sparse" drops to a half-time feel (kick on 1 only, snare on 3 only, quarter-note hi-hat) for e.g. a ballad. */
